@@ -229,29 +229,34 @@ length(libReturn$results)
 
 ```{r}
 
+#a)
+head(cabbages)
+dim(cabbages)
+tail(cabbages)
+glimpse(cabbages)
+str(cabbages)
+
+#b)
+
+any(is.na(cabbages))
+colSums(sapply(cabbages, is.na))
 
 
+#c)
 
+head(Chile)
+dim(Chile)
+tail(Chile)
+glimpse(Chile)
+str(Chile)
 
+any(is.na(Chile))
+colSums(sapply(Chile, is.na))
 
+#d)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+summary(cabbages)
+summary(Chile)
 
 
 
