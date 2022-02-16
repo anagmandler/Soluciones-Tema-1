@@ -338,5 +338,4 @@ c.  Usa **summary** con cada uno de los modelos obtenidos y observa **Coefficien
 ```{r}
 
 
-
 ```
