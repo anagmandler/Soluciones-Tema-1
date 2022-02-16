@@ -94,15 +94,40 @@ c.  Muestra los nombres de las filas y las columnas (**rownames**, **colnames**)
 ```{r}
 
 
+#a)
+#Características de ambos
+m <- mammals
+a <- Animals2
+
+
+#b)
+
+#Primera visión del conjunto de datos de mammals(m)
+dim(m)
+head(m)
+tail(m)
+str(m)
+
+#Primera visión del conjunto de datos de Animals2(a)
+
+dim(a)
+head(a)
+tail(a)
+str(a)
 
 
 
+#c)
+#Mostramos los nombres de las filas y de las columnas
+#Primero mostraremos las de mammals
 
+rownames(m)
+colnames(m)
 
+#Seguidamente las de Animals2(a)
 
-
-
-
+rownames(a)
+colnames(a)
 
 
 
@@ -116,9 +141,8 @@ d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los 
 ```{r}
 
 
-
-
-
+commonAnimals <- intersect(m, a)
+rownames(commonAnimals)
 
 ```
 
@@ -126,7 +150,14 @@ e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. �
 
 ```{r}
 
+#Animales en mammals pero no en Animals2
+diferentes_m <- setdiff(rownames(m), rownames(a))
+diferentes_m
 
+
+#Animales en Animals2 pero no en mammals
+diferentes_a <- setdiff(rownames(a), rownames(m))
+diferentes_a
 
 
 
